@@ -1,4 +1,4 @@
-import 'package:calculate/calculatorScreen.dart';
+import 'package:calculate/splashScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Calculator',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const CalculateScreen(),
+      home: const SplashScreen(),
     );
   }
 }
